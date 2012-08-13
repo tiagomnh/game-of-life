@@ -11,7 +11,7 @@
 
 #### Configuration File ####
 
-Some game variables can be changed using a configuration file like the one provided (game.config). The configuration file is passed as a argument to the executable:
+Some game variables can be changed using a configuration file like the one provided (game.config). The configuration file is passed as an argument to the executable:
 
 * ./game game.config
 

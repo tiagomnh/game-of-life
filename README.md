@@ -7,12 +7,12 @@
 
 ## Configuration File
 
-Some game variables can be changed using a configuration file like game.config (configuration file reading is powered by Richard J. Wagner's [ConfigFile](http://ai.stanford.edu/~gal/Code/FindMotifs/ConfigFile.h)). The configuration file is passed as an argument to the executable:
+Some game variables can be changed using a configuration file like `game.config` (configuration file reading is powered by Richard J. Wagner's [ConfigFile](http://ai.stanford.edu/~gal/Code/FindMotifs/ConfigFile.h)). The configuration file is passed as an argument to the executable:
 
-* ./game game.config
+`./game game.config`
 
 The example configuration lists all the possible configurations each accompanied by a small explanation.
 
 ## Compilation
 
-The included makefile can be used to compile the code. To compile and run the code type 'make' in your terminal. 'make compile' will compile the code but not run it.
+The included makefile can be used to compile the code. To compile and run the code type `make` in your terminal. `make compile will compile the code but not run it.

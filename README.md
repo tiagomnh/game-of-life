@@ -7,11 +7,11 @@
 
 ## Configuration File
 
-Some game variables can be changed using a configuration file like game.config (config file reading is powered by Richard J. Wagner's [ConfigFile](http://ai.stanford.edu/~gal/Code/FindMotifs/ConfigFile.h)). The configuration file is passed as an argument to the executable:
+Some game variables can be changed using a configuration file like game.config (configuration file reading is powered by Richard J. Wagner's [ConfigFile](http://ai.stanford.edu/~gal/Code/FindMotifs/ConfigFile.h)). The configuration file is passed as an argument to the executable:
 
 * ./game game.config
 
-The example configuration lists all the possible configurations accompanied by a small explanation.
+The example configuration lists all the possible configurations each accompanied by a small explanation.
 
 ## Compilation
 

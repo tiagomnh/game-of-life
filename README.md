@@ -16,3 +16,14 @@ The example configuration lists all the possible configurations each accompanied
 ## Compilation
 
 The included makefile can be used to compile the code. To compile and run the code type `make` in your terminal. `make compile will compile the code but not run it.
+
+If however you find the error "cannot find -lGL" while compiling, use the CmakeLists.txt.
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## Running
+./game-of-life

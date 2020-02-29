@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <ctime>
 
+enum CellState { NEWBORN, OLD, DYING, DEAD };
+
 class GameOfLife {
 private:
 	bool** grid;
@@ -19,5 +21,5 @@ public:
 	~GameOfLife();
 	void randomInit(const double probability = 0.1);
 	void iterate();
-    bool organismAt(const int x, const int y);
+    CellState organismAt(const int x, const int y);
 };

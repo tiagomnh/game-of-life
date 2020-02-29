@@ -1,4 +1,5 @@
 # Conway's Game of Life in GLUT/OpenGL
+![preview](/image/preview.png)
 
 ## Rules
 * an organism with 0, 1, 4, 5, 6, 7 or 8 neighbors dies

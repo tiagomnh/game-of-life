@@ -39,7 +39,20 @@ void display() {
 	glBegin(GL_QUADS);
 	for (GLint x = 0; x < game_width; ++x) {
 		for (GLint y = 0; y < game_height; ++y) {
-            game->organismAt(x, y)?glColor3f(BLACK):glColor3f(WHITE);
+		    switch(game->organismAt(x, y)) {
+                case DEAD: // No life
+                    glColor3f(BLACK);
+                    break;
+                case NEWBORN: // Just born
+                    glColor3f(0,1,0);
+                    break;
+                case DYING: // Dying
+                    glColor3f(1,0,0);
+                    break;
+                case OLD: // Old life
+                    glColor3f(WHITE);
+                    break;
+            }
             
 			glVertex2f(    x*xSize+left,    y*ySize+bottom);
 			glVertex2f((x+1)*xSize+left,    y*ySize+bottom);

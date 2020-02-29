@@ -94,6 +94,14 @@ int GameOfLife::countNeighbors(const int x, const int y) {
 	return neighbors;
 }
 
-bool GameOfLife::organismAt(const int x, const int y) {
-    return grid[x][y];
+CellState GameOfLife::organismAt(const int x, const int y) {
+    if(!grid[x][y] && !tempGrid[x][y]) {    // No life
+        return DEAD;
+    } else if(grid[x][y] && !tempGrid[x][y]) {  // Just born
+        return NEWBORN;
+    } else if(!grid[x][y] && tempGrid[x][y]) {  // Dying
+        return DYING;
+    } else if(grid[x][y] && tempGrid[x][y]) {   // Old life
+        return OLD;
+    }
 }
